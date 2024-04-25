@@ -21,12 +21,13 @@ body{
     background-color: var(--cor0);
     color: var(--cor1);
     justify-content: center;
+    margin-top: 100px;
 }
 main{
     display: flex;
     width: 400px;
     height: 80vh;
-    border-radius: 0 0 20px 20px;
+    border-radius: 20px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -36,6 +37,7 @@ h1{
 }
 h2,p{
     margin-top: 25px;
+    text-align: center;
 }
 #pes, #alt{
     padding: .5rem .2rem;
@@ -58,9 +60,10 @@ h2,p{
     margin-top: 10px;
 }
 .btn{
+    font-size: 18px;
     margin-top: 1rem;
     padding: .7rem;
-    width: 380px;
+    width: 80%;
     border-radius: 20px;
     background-color: var(--cor6);
     color: var(--cor0);
@@ -71,17 +74,21 @@ h2,p{
 .btn:hover{
     background-color: var(--cor7);
 }
+a{
+    text-align: center;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 @media (min-width: 768px) {
     body{
-        background-color: var(--cor3);
+        background-color: var(--cor2);
     }
     main{
         background-color: var(--cor0);
         box-shadow: 5px 5px 10px var(--cor8);
-    }
-}
-@media (min-width: 992px) {
-    body{
-        background-color: var(--cor2);
     }
 }

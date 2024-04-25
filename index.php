@@ -20,7 +20,7 @@
                 <input type="number" name="altura" id="alt" step="any" min="1" max="3" placeholder="1.45" required>
             </div>
 
-            <input type="submit" value="Calcular" class="btn">
+            <input type="submit" value="Calcular" class="btn calcular">
         </form>
     </main>
 </body>

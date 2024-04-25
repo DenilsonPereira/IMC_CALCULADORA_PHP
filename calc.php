@@ -13,7 +13,7 @@
             $p = isset($_GET['peso'])?$_GET['peso']:1;
             $a = isset($_GET['altura'])?$_GET['altura']:1;
             $imc = $p/($a*$a);
-            printf("<h2>Seu IMC é %.1f</h2>", $imc);
+            printf("<h2>Seu IMC é <mark>%.1f</mark></h2>", $imc);
             if($imc<18.5){
                 print "<p><strong>Abaixo do peso</strong><br>Risco de comorbidade: <strong class='baixo'>Baixo</strong></p>";
             }elseif($imc>=18.5 && $imc<25){
@@ -28,7 +28,7 @@
                 print "<p><strong>Obesidade III</strong><br>Risco de comorbidade: <strong class='grave'>Muito grave</strong></p>";
             }
         ?>
-        <p><a href="index.php" class="btn">Voltar</a></p>
+        <a href="index.php" class="btn">Voltar</a>
     </main>
 </body>
 </html>
